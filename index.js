@@ -6,7 +6,9 @@ module.exports = {
   },
   extends: [
     "eslint:recommended",
-    "plugin:react/recommended"
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended"
   ],
   parserOptions: {
     sourceType: "module",
@@ -22,6 +24,11 @@ module.exports = {
     "semi": ["error", "always"],
     // force 2 spaces
     "indent": ["error", 2],
+    "@typescript-eslint/indent": ["error", 2],
+    "@typescript-eslint/no-extra-semi": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/member-delimiter-style": ["error", {multiline: { delimiter: 'semi', requireLast: true }, singleline: { delimiter: 'semi', requireLast: true }}],
     // force single quotes
     "quotes": ["error", "single"],
     // trailing spaces not allowed
@@ -54,6 +61,7 @@ module.exports = {
     "comma-dangle": ["warn", "never"]
   },
   plugins: [
-    "react"
+    "react",
+    "@typescript-eslint"
   ]
 };

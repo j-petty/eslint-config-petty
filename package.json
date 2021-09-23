@@ -1,16 +1,21 @@
 {
-  "name": "eslint-config-pettylint",
-  "version": "1.0.0",
+  "name": "eslint-config-petty",
+  "version": "1.0.3",
   "description": "Reusable eslint config by James Petty",
   "keywords": [
     "eslint",
     "eslintconfig",
-    "pettylint"
+    "linter",
+    "petty"
   ],
   "main": "index.js",
   "author": "James Petty",
   "license": "ISC",
   "dependencies": {
+    "eslint": "^7.32.0",
+    "eslint-plugin-react": "^7.26.0"
+  },
+  "peerDependencies": {
     "eslint": "^7.32.0",
     "eslint-plugin-react": "^7.26.0"
   }
