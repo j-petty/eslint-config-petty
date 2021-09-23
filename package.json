@@ -8,6 +8,10 @@
     "linter",
     "petty"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/j-petty/eslint-config-petty.git"
+  },
   "main": "index.js",
   "author": "James Petty",
   "license": "ISC",
