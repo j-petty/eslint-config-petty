@@ -23,7 +23,7 @@ module.exports = {
     // force semicolons
     "semi": ["error", "always"],
     // force 2 spaces
-    "indent": ["error", 2],
+    "indent": ["error", 2, { "SwitchCase": 1 }],
     "@typescript-eslint/indent": ["error", 2],
     "@typescript-eslint/no-extra-semi": "off",
     "@typescript-eslint/no-explicit-any": "off",
