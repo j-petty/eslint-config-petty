@@ -2,7 +2,8 @@ module.exports = {
   env: {
     es6: true,
     node: true,
-    mocha: true
+    mocha: true,
+    browser: true
   },
   extends: [
     "eslint:recommended",
@@ -40,9 +41,15 @@ module.exports = {
     // space after function brackets
     "space-before-blocks": ["error", "always"],
     // no multiple empty lines
-    "no-multiple-empty-lines": ["error", {"max": 2, "maxEOF": 0, "maxBOF": 0}],
+    "no-multiple-empty-lines": ["error", { "max": 2, "maxEOF": 0, "maxBOF": 0 }],
     // force use of brackets
     "curly": "error",
+    // force no extra spaces
+    "no-multi-spaces": "error",
+    // force consistent JSX tag spacing
+    "react/jsx-tag-spacing": "error",
+    // force consistent JSX new lines
+    "react/jsx-wrap-multilines": "error",
 
     /// DISABLED RULES
 
@@ -58,7 +65,17 @@ module.exports = {
     // warn stroustrup brace style
     "brace-style": ["warn", "stroustrup"],
     // warn about training commas
-    "comma-dangle": ["warn", "never"]
+    "comma-dangle": ["warn", "never"],
+    // warn about unused vars
+    "no-unused-vars": "warn",
+    // warn about redundant JSX booleans
+    "react/jsx-boolean-value": "warn",
+    // warn when a JSX element should be self closing
+    "react/self-closing-comp": "warn",
+    // warn when importing the same module twice
+    "no-duplicate-imports": "warn",
+    // warn about TODO comments so they aren't missed
+    "no-warning-comments": ["warn", { "terms": ["todo"], "location": "start" }]
   },
   plugins: [
     "react",
