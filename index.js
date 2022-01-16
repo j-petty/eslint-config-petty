@@ -75,7 +75,8 @@ module.exports = {
     // warn when importing the same module twice
     "no-duplicate-imports": "warn",
     // warn about TODO comments so they aren't missed
-    "no-warning-comments": ["warn", { "terms": ["todo"], "location": "start" }]
+    "no-warning-comments": ["warn", { "terms": ["todo"], "location": "start" }],
+    "capitalized-comments": ["warn", "always"]
   },
   plugins: [
     "react",

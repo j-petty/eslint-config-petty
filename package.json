@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-petty",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "description": "Reusable eslint config by James Petty",
   "keywords": [
     "eslint",
@@ -16,10 +16,12 @@
   "author": "James Petty",
   "license": "ISC",
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.9.1",
     "eslint": "^7.32.0",
     "eslint-plugin-react": "^7.26.0"
   },
   "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.9.1",
     "eslint": "^7.32.0",
     "eslint-plugin-react": "^7.26.0"
   }
