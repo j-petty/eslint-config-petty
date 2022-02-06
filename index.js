@@ -32,6 +32,7 @@ module.exports = {
     "@typescript-eslint/member-delimiter-style": ["error", {multiline: { delimiter: 'semi', requireLast: true }, singleline: { delimiter: 'semi', requireLast: true }}],
     // force single quotes
     "quotes": ["error", "single"],
+    "jsx-quotes": ["error", "prefer-single"],
     // trailing spaces not allowed
     "no-trailing-spaces": "error",
     // space after keywords
