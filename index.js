@@ -2,8 +2,7 @@ module.exports = {
   env: {
     es6: true,
     node: true,
-    mocha: true,
-    browser: true
+    mocha: true
   },
   extends: [
     "eslint:recommended",
@@ -68,7 +67,8 @@ module.exports = {
     // warn about training commas
     "comma-dangle": ["warn", "never"],
     // warn about unused vars
-    "no-unused-vars": "warn",
+    "no-unused-vars": "off",
+    '@typescript-eslint/no-unused-vars': "warn",
     // warn about redundant JSX booleans
     "react/jsx-boolean-value": "warn",
     // warn when a JSX element should be self closing
@@ -77,10 +77,15 @@ module.exports = {
     "no-duplicate-imports": "warn",
     // warn about TODO comments so they aren't missed
     "no-warning-comments": ["warn", { "terms": ["todo"], "location": "start" }],
-    "capitalized-comments": ["warn", "always"]
+    "capitalized-comments": ["warn", "always"],
+    // warn about missing jsdoc
+    "jsdoc/require-jsdoc": ["warn", {contexts: ["TSInterfaceDeclaration", "TSTypeAliasDeclaration", "TSEnumDeclaration"]}],
+    // warn about JSX closing bracket styling
+    "react/jsx-closing-bracket-location": "warn"
   },
   plugins: [
     "react",
-    "@typescript-eslint"
+    "@typescript-eslint",
+    "jsdoc"
   ]
 };
