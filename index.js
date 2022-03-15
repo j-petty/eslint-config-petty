@@ -24,8 +24,8 @@ module.exports = {
     // force semicolons
     "semi": ["error", "always"],
     // force 2 spaces
-    "indent": ["error", 2, { "SwitchCase": 1 }],
-    "@typescript-eslint/indent": ["error", 2],
+    "indent": "off",
+    "@typescript-eslint/indent": ["error", 2, { "SwitchCase": 1 }],
     "@typescript-eslint/no-extra-semi": "off",
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/explicit-module-boundary-types": "off",
@@ -69,7 +69,7 @@ module.exports = {
     "comma-dangle": ["warn", "never"],
     // warn about unused vars
     "no-unused-vars": "off",
-    '@typescript-eslint/no-unused-vars': "warn",
+    '@typescript-eslint/no-unused-vars': ["warn", { "argsIgnorePattern": "^_" }],
     // warn about redundant JSX booleans
     "react/jsx-boolean-value": "warn",
     // warn when a JSX element should be self closing
@@ -81,8 +81,10 @@ module.exports = {
     "capitalized-comments": ["warn", "always"],
     // warn about missing jsdoc
     "jsdoc/require-jsdoc": ["warn", {contexts: ["TSInterfaceDeclaration", "TSTypeAliasDeclaration", "TSEnumDeclaration"]}],
+    "jsdoc/require-param": "off",
+    "jsdoc/require-returns": "off",
     // warn about JSX closing bracket styling
-    "react/jsx-closing-bracket-location": "warn"
+    "react/jsx-closing-bracket-location": ["warn", {selfClosing: 'line-aligned', nonEmpty: 'after-props'}]
   },
   plugins: [
     "react",
