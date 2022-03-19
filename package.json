@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-petty",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "Reusable eslint config by James Petty",
   "keywords": [
     "eslint",
