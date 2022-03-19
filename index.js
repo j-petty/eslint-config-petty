@@ -84,7 +84,7 @@ module.exports = {
     "jsdoc/require-param": "off",
     "jsdoc/require-returns": "off",
     // warn about JSX closing bracket styling
-    "react/jsx-closing-bracket-location": ["warn", {selfClosing: 'line-aligned', nonEmpty: 'after-props'}]
+    "react/jsx-closing-bracket-location": ["warn", "line-aligned"]
   },
   plugins: [
     "react",
