@@ -83,6 +83,10 @@ module.exports = {
     "jsdoc/require-jsdoc": ["warn", {contexts: ["TSInterfaceDeclaration", "TSTypeAliasDeclaration", "TSEnumDeclaration"]}],
     "jsdoc/require-param": "off",
     "jsdoc/require-returns": "off",
+    "jsdoc/require-param-type": "off",
+    "jsdoc/require-returns-type": "off",
+    // disable error for empty interfaces
+    "@typescript-eslint/no-empty-interface": "off",
     // warn about JSX closing bracket styling
     "react/jsx-closing-bracket-location": ["warn", "after-props"]
   },
